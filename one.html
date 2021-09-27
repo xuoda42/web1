@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<!-- комментарий в HTML -->
+
+<!-- в первой строке мы сообщаем браузеру,
+что это документ HTML5 -->
+
+<html lang="ru">
+
+  <head>
+    <title>Задание 1</title>
+  </head>
+
+  <body>
+    <div>
+      <ol>
+        <li><a href="http://example.com">HTTP</a></li>
+        <li><a href="https://example.com">HTTPS</a></li>
+        <li><a href="ftp://testwagon.software/info.txt">FTP без регистрацией</a></li>
+        <li><a href="ftp://student:pass1234@testwagon.software/info.txt">FTP с авторизацией</a></li>
+        <li><a href="http://example.com/#top">Фрагмент некоторого сайта</a></li>
+        <li><a href="">Фрагмент текущей страницы</a></li>
+        <li><a href="http://example.com/?a=5&b=abc"></a></li>
+        <li>
+          <ul>
+            <li><a href="/" title="Главная страница">Home</a></li>
+            <li><a href="/faq" title="Часто задаваемые вопросы">FAQ</a></li>
+            <li><a href="/products" title="Список товаров компании">Products</a></li>
+          </ul>
+        </li>
+        <li><a>Без href</a></li>
+        <li><a href="">Пустой href</a></li>
+        <li><a href="https://example.com" rel="nofollow">Запрещён доступ поискавикам</a></li>
+        <li><a href="http://example.com" rel="noindex">Неиндексируемая ссылка</a></li>
+        <li><p>Переходите на <a href="http://some.com">мой</a> сайт</p></li>
+        <li><a href="https://yandex.ru"><img src="./img/i.jpeg" height=100 alt="Yandex"></a></li>
+        <li><a href="https://yandex.ru"><img src="./img/i.jpeg" height=100 alt="Yandex" border-radius=10px></a></li>
+        <li><a href="./some.html">относительная на страницу в текущем каталоге</a></li>
+        <li><a href="./about/some.html">относительная на страницу в каталоге about</a></li>
+        <li><a href="../some.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../some.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
+        <li><a href="/">сокращенная на главную</a></li>
+        <li><a href="/#top">сокращенная на внутреннюю</a></li>
+      </ol>
+    </div>
+
+    <div>
+      <h1>Формы</h1>
+      <label>
+        Имя:<br />
+        <input name="field-name-1"
+          value="Семён" />
+      </label><br />
+
+      <label>
+        Email:<br />
+        <input name="field-email"
+          value="test@example.com"
+          type="email" />
+      </label><br />
+
+      <label>
+        Ваша дата:<br />
+        <input name="field-date"
+          value="2019-08-13"
+          type="date" />
+      </label><br />
+
+      Ваш пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        муж</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        жен</label><br />
+
+        Количетсво конечностей:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        1</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        2</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение3" />
+        3</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение4" />
+        4</label><br />
+
+      <label>
+        Суперспособности:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+          <option value="Значение3" selected="selected">Левитация</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br />
+
+      С контрактом ознакомлён:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        Чекбокс</label><br />
+
+      Кнопка отправки:
+      <input type="submit" value="Отправить" />
+    </div>
+  </body>
+
+</html>
+

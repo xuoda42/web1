@@ -1,0 +1,57 @@
+body {
+    background-color: dimgrey;
+}
+
+header {
+    width: 100%;
+    background-color: lightblue;
+    height: 120px;
+    position: relative;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 30%;
+}
+
+#header_title {
+    text-align: center;
+    font-size: 32px;
+    font-family: Tahoma, sans-serif;
+    padding-top: 36px;
+
+}
+
+nav {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.main_content {
+    background-color: azure;
+    max-width: 960px;
+    margin: 10px auto;
+    padding: 10px 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: lightblue;
+    height: 120px;
+    position: relative;
+}
+
+#footer_title {
+    font-family: Tahoma, sans-serif;
+    font-size: 26px;
+    padding: 42px;
+}

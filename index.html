@@ -1,116 +1,165 @@
 <!DOCTYPE html>
+<!--Закомментированные строки - это желаемые реализации, которые не проходят валидацию-->
 
 <html lang="ru">
-
 <head>
-	<title>Задание 1</title>
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"/>
 </head>
+    <body>
+
+        <header>
+            <img id="logo" src="../main/data/logo.png" alt="logo" />
+            <div id="header_title">Второе задание</div>
+        </header>
+
+        <nav class="main_content">
+            <a href="/">Главная</a>
+            <a href="/edu/web1">Первый проект</a>
+            <a href="/edu/web2">Второй проект</a>
+        </nav>
+
+        <map name="areas">
+            <area shape="rect" coords="41,25,145,129" href="http://vk.com/"  alt="VK" />
+            <area shape="rect" coords="175,25,273,129" href="http://facebook.com" alt="FB" />
+            <area shape="circle" coords="354,77,53" href="http://twitter.com" alt="Twitter" />
+        </map>
+
+        <div class="main_content">
+            <ol>
+                <li><a href="http://example.com/">HTTP</a></li>
+                <li><a href="https://example.com/">HTTPS</a></li>
+                <li><a href="ftp://testwagon.software/info.txt">FTP без авторизации</a></li>
+                <li><a href="ftp://student:pass1234@testwagon.software/info.txt">FTP с авторизацией</a></li>
+                <li><a href="http://example.com/#top">Ссылка на фрагмент некоторого сайта</a></li>
+                <li><a href="#entity_form">Ссылка на фрагмент текущей страницы</a></li>
+                <li><a href="http://google.com/?a=5&b=abc">Ссылка с двумя параметрами в URL</a></li>
+                <li>
+                    <ul>
+                        <li><a href="/" title="Главная страница">Home</a></li>
+                        <li><a href="/faq/" title="Часто задаваемые вопросы">FAQ</a></li>
+                        <li><a href="/products/" title="Список товаров компании">Products</a></li>
+                    </ul>
+                </li>
+                <li><a>hrefless</a></li>
+                <li><a href="">Empty href</a></li>
+                <li><a rel="nofollow" href="http://example.com/">Запрещён переход поисковикам</a></li>
+                <!--li><noindex><a rel="nofollow" href="http://example.com/">Неиндексируемая ссылка</a></noindex></li-->
+                <li><a rel="nofollow" href="http://example.com/">Неиндексируемая ссылка</a></li>
+                <li><p>Сайт КубГУ находится <a href="http://kubsu.ru/">здесь</a></p></li>
+                <li><a href="http://yandex.ru"><img src="../main/data/yandex_layout.png" height="100" alt="Yandex" /></a></li>
+                <li><img usemap="#areas" src="../main/data/soc_map.png" alt="Social networks" /></li>
+                <li><a href="./some.html">относительная на страницу в текущем каталоге</a></li>
+                <li><a href="./about/some.html">относительная на страницу в каталоге about</a></li>
+                <li><a href="../some.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+                <li><a href="../../some.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
+                <li><a href="/">сокращенная на главную</a></li>
+                <li><a href="/#top">сокращенная на внутреннюю</a></li>
+            </ol>
+        </div>
 
 
-<body>
-	<ol>
-		<li><a href="http://example.com/">HTTP</a></li>
-		<li><a href="https://example.com/">HTTPS</a></li>
-		<li><a href="ftp://testwagon.software/info.txt">FTP без авторизации</a></li>
-		<li><a href="ftp://student:pass1234@testwagon.software/info.txt">FTP с авторизацией</a></li>
-		<li><a href="http://example.com/#top">Ссылка на фрагмент некоторого сайта</a></li>
-		<li><a href="#entity_form">Ссылка на фрагмент текущей страницы</a></li>
-		<li><a href="http://google.com/?a=5&b=abc">Ссылка с двумя параметрами в URL</a></li>
-		<li>
-			<ul>
-				<li><a href="/" title="Главная страница">Home</a></li>
-				<li><a href="/faq/" title="Часто задаваемые вопросы">FAQ</a></li>
-				<li><a href="/products/" title="Список товаров компании">Products</a></li>
-			</ul>
-		</li>
-		<li><a>hrefless</a></li>
-		<li><a href="">Empty href</a></li>
-		<li><a rel="nofollow" href="http://example.com/">Запрещён переход поисковикам</a></li>
-		<!--li><noindex><a rel="nofollow" href="http://example.com/">Неиндексируемая ссылка</a></noindex></li-->
-		<li><a rel="nofollow" href="http://example.com/">Неиндексируемая ссылка</a></li>
-		<li><p>Сайт КубГУ находится <a href="http://kubsu.ru/">здесь</a></p></li>
-		<li><a href="http://yandex.ru"><img src="yandex_layout.png" height="100" alt="Yandex" /></a></li>
-		<li><img usemap="#areas" src="soc_map.png" alt="Social networks" /></li>
-		<li><a href="./some.html">относительная на страницу в текущем каталоге</a></li>
-		<li><a href="./about/some.html">относительная на страницу в каталоге about</a></li>
-		<li><a href="../some.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
-		<li><a href="../../some.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
-		<li><a href="/">сокращенная на главную</a></li>
-		<li><a href="/#top">сокращенная на внутреннюю</a></li>
-	</ol>
+        <div class="main_content">
+            <table>
+                <tr>
+                    <th>Колонка 1</th>
+                    <th>Колонка 2</th>
+                    <th>Колонка 1</th>
+                    <th>Колонка 1</th>
+                    <th>Колонка 1</th>
+                </tr>
+                <tr>
+                    <td>Ячейка 11</td>
+                    <td>Ячейка 12</td>
 
+                </tr>
+                <tr>
+                    <td>Ячейка 21</td>
+                    <td>Ячейка 22</td>
+                </tr>
+            </table>
+        </div>
 
-	<form method="POST" id="entity_form">
+        <div class="main_content">
+            <form method="POST" id="entity_form">
 
-	<label>
-		Имя:<br />
-		<input name="entity_name" />
-	</label><br />
+                <label>
+                    Имя:<br />
+                    <input name="entity_name" />
+                </label><br />
 
-	<label>
-		E-mail:<br />
-		<input name="entity_email"
-			type="email"
-			value="email@example.com" />
-	</label><br />
+                <label>
+                    E-mail:<br />
+                    <input name="entity_email"
+                           type="email"
+                           value="email@example.com" />
+                </label><br />
 
-	<label>
-		Дата рождения:<br />
-		<input name="entity_birth"
-			type="text"
-			value="2002.05.19" />
-	</label><br />
+                <label>
+                    Дата рождения:<br />
+                    <!--input name="entity_birth"
+                        type="date"
+                        value="2019-09-20" /-->
+                    <input name="entity_birth"
+                           type="text"
+                           value="2019-09-20" />
+                </label><br />
 
-	Пол:<br />
-	<label><input type="radio" checked="checked"
-		name="gender-group" value="male" />
-		Мужской</label><br />
-	<label><input type="radio"
-		name="gender-group" value="female" />
-		Женский</label><br />
-	<label><input type="radio"
-		name="gender-group" value="xenos" />
-		Другое</label><br />
-	<br />
+                Пол:<br />
+                <label><input type="radio" checked="checked"
+                              name="gender-group" value="male" />
+                    Мужской</label><br />
+                <label><input type="radio"
+                              name="gender-group" value="female" />
+                    Женский</label><br />
+                <label><input type="radio"
+                              name="gender-group" value="xenos" />
+                    Другое</label><br />
+                <br />
 
-	Количество конечностей:<br />
-	<label><input type="radio" checked="checked"
-				  name="limbs" value="first_range" />
-		1 - 2</label><br />
-	<label><input type="radio"
-				  name="limbs" value="second_range" />
-		3 - 4</label><br />
-	<label><input type="radio"
-				  name="limbs" value="xenos_range" />
-		Больше</label><br />
-	<br />
+                Количество конечностей:<br />
+                <label><input type="radio" checked="checked"
+                              name="limbs" value="first_range" />
+                    1 - 2</label><br />
+                <label><input type="radio"
+                              name="limbs" value="second_range" />
+                    3 - 4</label><br />
+                <label><input type="radio"
+                              name="limbs" value="xenos_range" />
+                    Больше</label><br />
+                <br />
 
-	<label>
-		Сверхспособности:
-		<br />
-		<select name="superpowers"
-				multiple="multiple">
-			<option value="immortality">Бессмертие</option>
-			<option value="de_materialism">Прохождение сквозь стены</option>
-			<option value="levitation">Левитация</option>
-		</select>
-	</label><br />
-	<br />
+                <label>
+                    Сверхспособности:
+                    <br />
+                    <select name="superpowers"
+                            multiple="multiple">
+                        <option value="immortality">Бессмертие</option>
+                        <option value="de_materialism">Прохождение сквозь стены</option>
+                        <option value="levitation">Левитация</option>
+                    </select>
+                </label><br />
+                <br />
 
-	<label>
-		Биография:<br />
-		<textarea name="bio"></textarea>
-	</label><br />
-	<br />
+                <label>
+                    Биография:<br />
+                    <textarea name="bio"></textarea>
+                </label><br />
+                <br />
 
-	<label><input type="checkbox" name="check-1" />
-		с контрактом ознакомлен</label><br />
-	<br />
+                <label><input type="checkbox" name="check-1" />
+                    с контрактом ознакомлен</label><br />
+                <br />
 
-	<input type="submit" value="Отправить" />
+                <input type="submit" value="Отправить" />
 
-</form>
-</body>
+            </form>
+        </div>
 
+        <footer>
+            <div id="footer_title">© Захаров Павел 2019</div>
+        </footer>
 
+    </body>
 </html>
