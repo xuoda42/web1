@@ -37,8 +37,8 @@
         <li><a href="ftp://testwagon.software/info.txt">FTP без регистрацией</a></li>
         <li><a href="ftp://student:pass1234@testwagon.software/info.txt">FTP с авторизацией</a></li>
         <li><a href="http://example.com/#top">Фрагмент некоторого сайта</a></li>
-        <li><a href="">Фрагмент текущей страницы</a></li>
-        <li><a href="http://example.com/?a=5&b=abc"></a></li>
+        <li><a href="#super">Фрагмент текущей страницы</a></li>
+        <li><a href="http://example.com/?a=5&b=abc">Ссылка с несколькими параметрами</a></li>
         <li>
           <ul>
             <li><a href="/" title="Главная страница">Home</a></li>
@@ -73,7 +73,7 @@
     </div>
 
     <div>
-      <h1 id="forms">Формы</h1>
+      <h1>Формы</h1>
       <label>
         Имя:<br />
         <input name="field-name-1"
@@ -96,27 +96,27 @@
 
       Ваш пол:<br />
       <label><input type="radio" checked="checked"
-        name="radio-group-1" value="Значение1" />
+        name="radio-group" value="Мужской" />
         муж</label>
       <label><input type="radio"
-        name="radio-group-1" value="Значение2" />
+        name="radio-group" value="Женский" />
         жен</label><br />
 
         Количетсво конечностей:<br />
       <label><input type="radio" checked="checked"
-        name="radio-group-1" value="Значение1" />
+        name="radio-group-1" value="Одна" />
         1</label>
       <label><input type="radio"
-        name="radio-group-1" value="Значение2" />
+        name="radio-group-1" value="Две" />
         2</label>
       <label><input type="radio"
-        name="radio-group-1" value="Значение3" />
+        name="radio-group-1" value="Три" />
         3</label>
       <label><input type="radio"
-        name="radio-group-1" value="Значение4" />
+        name="radio-group-1" value="Четыре" />
         4</label><br />
 
-      <label>
+      <label id="super">
         Суперспособности:
         <br />
         <select name="field-name-4[]"
