@@ -1,0 +1,74 @@
+#logo {
+    width: 57px;
+    height: 57px;
+    float: left;
+    padding: 0 0 0 30px;
+}
+
+header {
+    width: 100%;
+    background: #5ae866;
+    height: 40px;
+    padding: 20px 0;
+    margin: 0 10px 0 0;
+}
+
+header h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.test{
+	width: 100%;
+	text-align: center;
+}
+
+.center{
+	display: inline-block;
+}
+
+.menu {
+    align-content: center;
+}
+
+.menu ul {
+	overflow: hidden;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu li{
+	float: left;
+	color: #e6ecf0;
+}
+
+.menu a {
+	display: block;
+	padding: 1em;
+	background: #e6ecf0;
+	color: #2c8c29;
+}
+
+body {
+    margin: 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+	margin: 10px auto;
+}
+
+footer{
+	width: 100%;
+	background: #5ae866;
+	height: 40px;
+	padding: 20px 0;
+	margin: 10px 0 0 0;
+}
+
+footer p {
+    font-size: 16px;
+    margin-left: 1%;
+}
