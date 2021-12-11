@@ -1,0 +1,134 @@
+#logo {
+    width: 57px;
+    height: 57px;
+    float: left;
+    padding: 0 0 0 30px;
+}
+
+header {
+    width: 100%;
+    background: #5ae866;
+    height: 40px;
+    padding: 20px 0;
+    margin: 0 10px 0 0;
+}
+
+header h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.test{
+	width: 100%;
+	text-align: center;
+}
+
+.center{
+	display: inline-block;
+}
+
+.menu {
+    align-content: center;
+}
+
+.menu ul {
+	overflow: hidden;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu li{
+	float: left;
+	color: #e6ecf0;
+}
+
+.menu a {
+	display: block;
+	padding: 1em;
+	background: #e6ecf0;
+	color: #2c8c29;
+}
+
+body {
+    margin: 0;
+}
+
+body a {
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+	margin: 10px auto;
+}
+
+footer{
+	width: 100%;
+	background: #5ae866;
+	height: 40px;
+	padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+    margin-left: 1%;
+}
+
+#body-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#body-box a1, a2, a3, a4, a5, a6 {
+    background-color: #2fa76b;
+    margin: 10px;
+}
+
+#body-box a1 {
+    flex: 3;
+    order: 1;
+}
+
+#body-box a2 {
+    flex: 3;
+    order: 2;
+}
+
+#body-box a3 {
+    flex: 3;
+    order: 3;
+}
+
+#body-box a4 {
+    flex: 3;
+    order: 4;
+}
+
+#body-box a5 {
+    flex: 3;
+    order: 5;
+    padding-left: 20px;
+}
+
+#body-box a6 {
+    flex: 3;
+    order: 6;
+}
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+    #body-box {
+      flex-direction: row wrap;
+    }
+
+    #body-box a4 {
+      flex: 3;
+      order: 5;
+    }
+
+    #body-box a5 {
+      flex: 3;
+      order: 4;
+    }
+  } 
