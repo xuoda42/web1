@@ -1,0 +1,64 @@
+html {
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background-color: #cccccc;
+    margin: 0;
+}
+
+header, nav, form, #links, footer, table {
+    background-color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: darkturquoise;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: lightblue;
+}
+
+img {
+    max-width: 50vmin;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+}
+
+#header_title {
+    font-size: 26px;
+}
+
+#footer_title {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) and (min-device-width: 768px) {
+    #logo {
+        display: block;
+        width: 15vh;
+        height: 15vh;
+    }
+
+    #header_title {
+        position: absolute;
+        width: 100%;
+    }
+
+    .main_content {
+        max-width: 960px;
+    }
+
+    #header_title {
+        font-size: 32px;
+    }
+
+    #footer_title {
+        font-size: 26px;
+    }
+
+}
+
