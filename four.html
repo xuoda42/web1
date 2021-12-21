@@ -1,16 +1,197 @@
 <!DOCTYPE html>
+<!--Закомментированные строки - это желаемые реализации, которые не проходят валидацию-->
+
 <html lang="ru">
+<head>
+    <title>Task 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../main/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+</head>
+<body class="container-fluid">
 
-    <head>
-        <title>Задание 4</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style4.css">
-        
-    </head>
+<header class="row justify-content-around justify-content-md-start mb-2 mb-md-3 pt-2 pb-2">
+    <div id="header_title" class="align-self-center text-center order-2">Четвёртое задание</div>
+    <a href="/"><img id="logo" class="align-self-center" src="../main/data/new-logo.png" alt="logo" /></a>
+</header>
 
-    <body>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+<nav class="main_content row navbar justify-content-around mx-md-auto mb-2 mb-md-3">
+    <a href="/" class="nav-item col-12 col-md-2">Главная</a>
+    <a href="/edu/web1" class="nav-item col-12 col-md-2">Первый проект</a>
+    <a href="/edu/web3" class="nav-item col-12 col-md-2">Третий проект</a>
+</nav>
+
+<map name="areas">
+    <area shape="rect" coords="41,25,145,129" href="http://vk.com/"  alt="VK" />
+    <area shape="rect" coords="175,25,273,129" href="http://facebook.com" alt="FB" />
+    <area shape="circle" coords="354,77,53" href="http://twitter.com" alt="Twitter" />
+</map>
+
+<div id="links" class="main_content row mx-md-auto mb-2 mb-md-3 py-2">
+    <ol>
+        <li><a href="http://example.com/">HTTP</a></li>
+        <li><a href="https://example.com/">HTTPS</a></li>
+        <li><a href="ftp://testwagon.software/info.txt">FTP без авторизации</a></li>
+        <li><a href="ftp://student:pass1234@testwagon.software/info.txt">FTP с авторизацией</a></li>
+        <li><a href="http://example.com/#top">Ссылка на фрагмент некоторого сайта</a></li>
+        <li><a href="#entity_form">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="http://google.com/?a=5&b=abc">Ссылка с двумя параметрами в URL</a></li>
+        <li>
+            <ul>
+                <li><a href="/" title="Главная страница">Home</a></li>
+                <li><a href="/faq/" title="Часто задаваемые вопросы">FAQ</a></li>
+                <li><a href="/products/" title="Список товаров компании">Products</a></li>
+            </ul>
+        </li>
+        <li><a>hrefless</a></li>
+        <li><a href="">Empty href</a></li>
+        <li><a rel="nofollow" href="http://example.com/">Запрещён переход поисковикам</a></li>
+        <!--li><noindex><a rel="nofollow" href="http://example.com/">Неиндексируемая ссылка</a></noindex></li-->
+        <li><a rel="nofollow" href="http://example.com/">Неиндексируемая ссылка</a></li>
+        <li><p>Сайт КубГУ находится <a href="http://kubsu.ru/">здесь</a></p></li>
+        <li><a href="http://yandex.ru"><img src="../main/data/yandex_layout.png" height="100" alt="Yandex" /></a></li>
+        <li><img usemap="#areas" src="../main/data/soc_map.png" alt="Social networks" /></li>
+        <li><a href="./some.html">относительная на страницу в текущем каталоге</a></li>
+        <li><a href="./about/some.html">относительная на страницу в каталоге about</a></li>
+        <li><a href="../some.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../some.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
+        <li><a href="/">сокращенная на главную</a></li>
+        <li><a href="/#top">сокращенная на внутреннюю</a></li>
+    </ol>
+</div>
+
+
+<div class="row justify-content-around mx-md-auto mb-0">
+<div class="col-12 main_content justify-content-around order-2 order-md-1 p-0 mb-0">
+<table class="table table-striped col-12 p-2 mb-2 mb-md-3">
+    <tr>
+        <th>Колонка 1</th>
+        <th>Колонка 2</th>
+        <th>Колонка 3</th>
+    </tr>
+    <tr>
+        <td>Ячейка 11</td>
+        <td>Ячейка 12</td>
+        <td>Ячейка 13</td>
+    </tr>
+    <tr>
+        <td>Ячейка 21</td>
+        <td>Ячейка 22</td>
+        <td>Ячейка 23</td>
+    </tr>
+    <tr>
+        <td>Ячейка 31</td>
+        <td>Ячейка 32</td>
+        <td>Ячейка 33</td>
+    </tr>
+    <tr>
+        <td>Ячейка 41</td>
+        <td colspan="2" rowspan="2">Объединенная ячейка 42</td>
+    </tr>
+    <tr>
+        <td>Ячейка 51</td>
+    </tr>
+    <tr>
+        <td>Ячейка 61</td>
+        <td>Ячейка 62</td>
+        <td>Ячейка 63</td>
+    </tr>
+    <tr>
+        <td>Ячейка 71</td>
+        <td>Ячейка 72</td>
+        <td>Ячейка 73</td>
+    </tr>
+</table>
+</div>
+
+<div class="col-12 main_content mb-2 mb-md-3 order-1 order-md-2 p-0">
+<form method="POST" id="entity_form" class="p-2 col-12">
+
+
+    <label class="col-12 col-md-4">
+        Имя:<br />
+        <input class="col-12" name="entity_name" />
+    </label><br />
+
+    <label class="col-12 col-md-4">
+        E-mail:<br />
+        <input class="col-12"
+                name="entity_email"
+               type="email"
+               value="email@example.com" />
+    </label><br />
+
+    <label class="col-12 col-md-4">
+        Дата рождения:<br />
+        <!--input name="entity_birth"
+            type="date"
+            value="2019-09-20" /-->
+        <input class="col-12"
+               name="entity_birth"
+               type="text"
+               value="2019-09-20" />
+    </label><br /><br />
+
+    <div class="col-12">
+    Пол:<br />
+    <label><input type="radio" checked="checked"
+                  name="gender-group" value="male" />
+        Мужской</label><br />
+    <label><input type="radio"
+                  name="gender-group" value="female" />
+        Женский</label><br />
+    <label><input type="radio"
+                  name="gender-group" value="xenos" />
+        Другое</label><br />
+    <br />
+
+    Количество конечностей:<br />
+    <label><input type="radio" checked="checked"
+                  name="limbs" value="first_range" />
+        1 - 2</label><br />
+    <label><input type="radio"
+                  name="limbs" value="second_range" />
+        3 - 4</label><br />
+    <label><input type="radio"
+                  name="limbs" value="xenos_range" />
+        Больше</label><br />
+    <br />
+    </div>
+
+    <label class="col-12">
+        Сверхспособности:
+        <br />
+        <select class="col-12 col-md-8"
+                name="superpowers"
+                multiple="multiple">
+            <option value="immortality">Бессмертие</option>
+            <option value="de_materialism">Прохождение сквозь стены</option>
+            <option value="levitation">Левитация</option>
+        </select>
+    </label><br />
+    <br />
+
+    <label class="col-12">
+        Биография:<br />
+        <textarea class="col-12 col-md-8" name="bio"></textarea>
+    </label><br />
+    <br />
+
+    <label class="col-12"><input type="checkbox" name="check-1" />
+        с контрактом ознакомлен</label><br />
+    <br />
+
+    <div class="col-12">
+        <input type="submit" class="col-12 col-md-2 btn btn-primary" value="Отправить" />
+    </div>
+
+</form>
+</div>
+</div>
+
+<footer class="row p-4 p-md-5">
+    <div id="footer_title">© Семён Махалин 2021</div>
+</footer>
+</body>
 </html>
