@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body> 
+
+    <main>
+            <div class="wrapper">
+                <div style="text-align: center;" > <a role="button" href="#popup" class="header_phone popup-link btn btn-success" id = "for-popup-form">Заполнить форму</a></div>
+                <div class="popup-overlay" id = "popup">
+                  <div class="popWindow popup-main-window">
+                  <div class="close-btn">&times;</div>
+                  
+                  <div class="row my-4">
+                  <h2 class="form-text">Введите данные:</h2>
+                  </div>
+                  <form method="POST" class="row mx-5 my-2 gy-1 popup-form">
+                    <div class="form_item form-group">
+                        <label for="formName" style="color: black;">Имя:</label>
+                        <input type="text" class="form_input _req form-control w-75 shadow bg-white rounded" name = "popup-name" id="formName" placeholder="Введите имя" required>
+                        </div>
+                        <div class="form_item form-group">
+                            <label for="formEmail" style="color: black;">E-mail:</label>
+                            <input type="email" class="form_input _req _email form-control w-75 shadow bg-white rounded" id="formEmail" name = "popup-email" required placeholder="Введите E-mail:" >
+                            </div>   
+                            <div class="form_item form-group w-75">
+                                <label for="formMessage" style="color: black;">Сообщение:</label>
+                                <textarea id="formMessage" id="formMessage" name="popup-message" class="form_input _req form-control shadow bg-white rounded"  id="form">
+                                </textarea>
+                                <small class="form-text text-muted">Необязательное поле</small>
+                                </div>
+                                <div class="form-check">
+									<label id="soglasie " class="checkbox_label form-check-label">Я согласен с<a
+                                    href="https://www.kubsu.ru/"> политикой КубГУ</a></label>
+                                    <input for="soglasie" checked type="checkbox" name="popup-checkbox" class="checkbox_input form-check-input" style="color: black;">           
+                                    </div>
+                  <label class = "col-12"><input type = "submit" name = "popup-submit" class = "popup-submit"></label>
+                  </form>
+                  </div>
+                  <br>
+                  <div class="popWindow thank-you-window">
+                  <div class="close-btn">&times;</div>
+                  <br><br>
+                  <p class = "thank-you-message">
+                  Ваше cообщение отправлено!
+                  </p>
+                  </div>
+                  </div>
+                </div>
+                </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--подключаем jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--подключаем слайдер Slick-->
+        <script src="slick.min.js"></script>
+    <script src="script8.js"></script>
+</body>
+</html>

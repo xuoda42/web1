@@ -1,0 +1,157 @@
+.main{
+    margin-top: 10px;
+    background-color: white;
+    width: 50%;
+    border: 1px solid black;
+    margin: auto;
+}
+#cena,#kol{
+    border: 1px solid black;
+}
+body{
+    background-color: white;
+}
+main{
+    margin-top: 10px;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}
+
+
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+.slider{
+    margin-top: 20px;
+    position: relative;
+    padding: 0px 60px;
+}
+.slider .slick-arrow{
+   position: absolute;
+   top: 50%; 
+   margin: -30px 0px 0px 0px;
+   z-index: 10;
+   font-size: 0;
+   width: 30px;
+   height: 60px;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+
+.form-text{
+    margin-top: 15px;
+}
+.popup-submit{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 green;
+    transition: background-color 0.5s ease 0s; 
+    background-color: green;
+    margin-top: 10px;
+}
+.popup-overlay{
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: white;
+	z-index: 100;
+	}
+	.popWindow{
+	display: none;
+	margin: auto;
+	max-width: 720px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	left:50%;
+	box-shadow: 0 0 30px black;
+	background-color: white;
+    border-radius: 5px;
+	}
+	.popWindow h2{
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	z-index: 10;
+	position: relative;
+	}
+	.close-btn{
+	float:right;
+	font-size: 30px;
+	line-height: 20px;
+	cursor: pointer;
+	color: black;
+	padding: 10px;
+	}
+	.thank-you-window{
+	display: none;
+	height: 100px;
+	width: 400px;
+    padding-bottom: 5px;
+    text-align: center;
+    align-items: center;
+    margin-top: 0px;
+	box-shadow: 0 0 30px green;
+	background-color: green;
+	position:absolute;
+	}
+	.thank-you-message{
+	font-size: 25px;
+    color: black;
+	}
+@media screen and (min-width: 700px) and (orientation: landscape) {
+    .osn{
+     width: 50%; 
+     margin: auto;
+    }
+    .btnf{
+        padding-left: 120px;
+    }
+    .form_button{
+        width: 70%;
+    }
+ }
+ 
