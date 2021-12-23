@@ -1,105 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор</title>
-    
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>WEB7</title>
+    <link rel="stylesheet" href="style7.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" 
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/gallery.js" defer></script>
 </head>
+
+
 <body>
-    <selection>
-        <div class="main">
-            <div class="container pb-3">
-            <div class="row">
-                <div class="col-lg-12"><h1 class="text-center">Калькулятор стоимости заказа (Переделано): </h1></div>
-            <div class="col-mb-12">
-            <form >
-                <div class="row mb-3">
-                    <div class="form-group col-md-6 col-sm-6">
-                        <span class="badge bg-warning" style="margin-bottom: 10px;">Цена товара:</span>
-                    <input type="text" class="form-control" id="cena" placeholder="0">
-                    <small class="form-text text-mutted">Введите цену в рублях</small>
+            <div class="slider">
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/1.jpg"  alt="">
                 </div>
-                <div class="form-group col-md-6 col-sm-6">
-                    <span class="badge bg-warning" style="margin-bottom:10px;">Количество товаров: </span>
-                    <input type="text" id="kol" class="form-control" placeholder="0">
-                    <small class="form-text text-mutted">Введите количество</small>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/2.jpg"  alt="">
                 </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/3.jpg"  alt="">
                 </div>
-                <div class="row col-12 mb-3">
-                    <p style="color: black"><span id="out">0.0</span>₽</p>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/4.jpg"  alt="">
                 </div>
-                <div class="row">
-                    <div class="col-mb-2 col-12">
-                        <input type="button" name="adress" id="btn" class="btn-block btn btn-success" style="border: 1px solid black;" value="Считать">
-                    </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/5.jpg" alt="">
                 </div>
-            </form>
-        </div>
-    </div>
-</div>
-</div>
-    </selection> 
-
-    <main>
-        <div class="osn mt-4">
-            <div class="container pb-3">
-            <div class="row"> <div class="col-lg-12"> <h1 class="text-center text-dark">Калькулятор стоимости заказа и услуг</h1> </div> 
-            <div class="col-md-12"> 
-        <form id="form">
-            <div class="form-group col-md-6 col-sm-6">
-                <label for="multipleselect" class="badge bg-warning" style=" font-size: smaller">Выберите товар:</label>  
-        <select name="myselect">
-        <option value="1">Зонтики</option>
-        <option value="2">Компьютер</option>
-        <option value="3">Холодильники</option>
-        </select>
-       </div>
-        <div class="calc-section">
-        <label class="checkbox-wrapper title-bold section-title .section-title-vertical-center">
-        <span class="badge bg-warning mt-3">Количество товаров</span>
-        <input type="number" min="1" max="200" value="1" id="square-input" class="title__inline input-short" />
-        <span class="title__inline">штук</span>
-        </label>
-        </div>
-        
-        <div class="calc-section" id="radios">
-            <span class="badge bg-warning mt-3">Выберите дополнительные услуги:</span>
-            <div class="form-check">
-            <label class="radio-wrapper" data-name="mobile"><input type="radio" class="radio" name="type" value="0"> Самовывоз</label>
-        </div>
-        <div class="form-check">
-            <label class="radio-wrapper" data-name="mobile"><input type="radio" class="radio" name="type" value="1000"> Доставка до дома</label>
-        </div>
-        <div class="form-check">
-            <label class="radio-wrapper" data-name="mobile"><input type="radio" class="radio" name="type" value="2000"> Доставка до квартиры</label>
-        </div>
-        </div>
-        
-        <div class="calc-section" id="checkbox">
-            <span class="badge bg-warning mt-3">Выберите дополнительные опции:</span>
-            <div class="form-check"> <label><input type="checkbox" class="checkbox" name="ceiling" value="5000"> Морозильная камера</label></div>
-            <div class="form-check"> <label><input type="checkbox" class="checkbox" name="ceiling" value="12000"> Двухкамерный основной раздел</label></div>
-                <div class="form-check"> <label><input type="checkbox" class="radio" name="ceiling" value="15000"> Встроенный</label></div>
-           </div>
-        
-        
-        <div class="calc-price">
-        <div class="badge bg-success mt-3">Итоговая стоимость:</div>
-        <span id="total-price">0</span>
-        рублей
-        </div>
-        
-        </form>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/6.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/7.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/8.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/9.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/10.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/11.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/12.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/13.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/14.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/15.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/16.jpg"  alt="">
+                </div>
             </div>
-            </div>
-            </div>
-        </div>
-        </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
