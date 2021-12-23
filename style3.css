@@ -35,13 +35,12 @@ header h1 {
 	overflow: hidden;
 	padding: 0;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .menu li{
 	float: left;
 	color: #e6ecf0;
+    width: 100%;
 }
 
 .menu a {
@@ -64,6 +63,19 @@ table, th, td {
 	margin: 10px auto;
 }
 
+.colorrr {
+	background:rgb(255, 255, 255);
+}
+
+table {
+	background: #ADC0CE;
+}
+
+#begin, #forms, .menu {
+	max-width: 50%;
+	margin: 0 auto;
+}
+
 footer{
 	width: 100%;
 	background: #5ae866;
@@ -79,6 +91,10 @@ footer p {
 #body-box {
     display: flex;
     flex-direction: column;
+}
+
+#body-box a2, a3, a4, a5 {
+    margin: 10px 25% !important;
 }
 
 #body-box a1, a2, a3, a4, a5, a6 {
